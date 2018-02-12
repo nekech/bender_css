@@ -1,0 +1,890 @@
+<html>
+<style>
+#m1{
+	position:absolute;
+	width:90%;
+	height:90%;
+	left:25%;
+	top:5%;
+}
+.head{
+	position:absolute;
+	width:7%;
+	height:25%;
+	top:8%;
+	border: 1px solid black;
+	border-radius: 53px 53px 15px 15px;
+	background:#A8C7DC;
+}
+.mouth{
+	position:absolute;
+	width:90%;
+	left:4%;
+	height:18%;
+	top:66%;
+	border: 1px solid black;
+	border-radius: 15px 15px 10px 10px;
+	background:#FFFFCC;
+}
+#tooth1{
+	position:absolute;
+	width:18%;
+	height:100%;
+	border-right:1px solid black;
+	border-left:1px solid black;
+	left:9%;
+}
+#tooth2{
+	position:absolute;
+	width:20%;
+	height:100%;
+	border-right:1px solid black;
+	border-left:1px solid black;
+	left:45%;
+}
+#tooth3{
+	position:absolute;
+	width:20%;
+	height:100%;
+	border-right:1px solid black;
+	border-left:1px solid black;
+	left:85%;
+}
+#tooth4{
+	position:absolute;
+	width:100%;
+	border-top:1px solid black;
+	top:50%;
+}
+.eyes{
+	position:absolute;
+	width:132%;
+	left:-16%;
+	height:24%;
+	top:32%;
+	border: 1px solid black;
+	border-radius: 15px 15px 15px 15px;
+	background:#D4ECF9;
+}
+.eyesi{
+	position:absolute;
+	width:124%;
+	left:-12%;
+	height:19%;
+	top:35%;
+	border: 1px solid black;
+	border-radius: 15px 15px 15px 15px;
+	background:black;
+}
+.eye{
+	position:absolute;
+	width:26%;
+	height:90%;
+	border: 1px solid black;
+	border-radius: 10px;
+	background:#FCF7BF;
+}
+#eye1{
+	left:11%;
+}
+#eye2{
+	left:60%;
+}
+.pupils{
+	position:absolute;
+	width:10%;
+	height:10%;
+	top:40%;
+	left:40%;
+	border: 1px solid black;
+	background:black;
+}
+.antenap1{
+	position:absolute;
+	width:26%;
+	height:5%;
+	left:36%;
+	top:-5%;
+	border: 1px solid black;
+	border-radius: 7px 7px 1px 1px;
+	background:#D0ECFA;
+}
+.antenap2{
+	position:absolute;
+	width:8%;
+	height:22%;
+	left:44%;
+	top:-27%;
+	border: 1px solid black;
+	border-bottom:1px solid transparent;
+	border-radius: 15px 15px 1px 1px;
+	background:#79A8C4;
+}
+.antenap3{
+	position:absolute;
+	width:17%;
+	height:10%;
+	left:39%;
+	top:-36%;
+	border: 1px solid black;
+	border-radius: 17px 17px 17px 17px;
+	background:#C4DEEB;
+}
+.neck{
+	position:absolute;
+	width:12%;
+	height:8%;
+	top:33%;
+	left:-2.4%;
+	border: 1px solid black;
+	border-radius: 37px 37px 1px 1px;
+	background:#CAE1EF;
+}
+.bbody{
+	position:absolute;
+	width:12%;
+	height:28%;
+	border: 1px solid black;
+	top:41%;
+	left:-2.4%;
+	border-bottom-left-radius: 50% 10%;
+	border-bottom-right-radius: 50% 10%;
+	background:#A7C6DB;
+}
+.cover{
+	position:absolute;
+	top:13%;
+	left:18%;
+	border: 1px solid black;
+	width:70%;
+	height:70%;
+	border-radius: 15px 15px;
+	background:#A8C7DC;
+}
+.grip{
+	position:absolute;
+	top:48%;
+	left:85%;
+	border: 1px solid black;
+	width:7%;
+	height:6%;
+	border-radius:5px 5px;
+}
+
+.forearm{
+	position:absolute;
+	width:25%;
+	height:5%;
+	border: 1px solid black;
+	border-radius: 17px 17px 1px 1px;
+	background:#ADC5DA;
+}
+#forearm1{
+	top:10%;
+	left:91%;
+	-webkit-transform: rotate(90deg);
+}
+#forearm2{
+	top:10%;
+	left:-17%;
+	-webkit-transform: rotate(-90deg);
+}
+#left_hande{
+	position:absolute;
+	top:5%;
+	left:-26%;
+}
+#right_hande{
+	position:absolute;
+	top:5%;
+	left:109%;
+}
+#left_leg{
+	position:absolute;
+	top:98%;
+	left:4%;
+}
+#rigth_leg{
+	position:absolute;
+	top:98%;
+	left:80%;
+}
+#left_foot{
+	position:absolute;
+	border-bottom:25px solid #A7C6DB;
+	border-left: 10px solid transparent;
+	width:40px;
+	border-right: 10px solid transparent;
+	left:-17px;
+}
+#right_foot{
+	position:absolute;
+	border-bottom:25px solid #A7C6DB;
+	border-left: 10px solid transparent;
+	width:40px;
+	border-right: 10px solid transparent;
+	left:-17px;
+}
+#left_wrist{
+	position:absolute;
+	border-left: 25px solid #A7C6DB;
+	border-bottom:10px solid transparent;
+	border-top:10px solid transparent;
+	height:25px;
+	top:-10px;
+	left:-3px;
+}
+#right_wrist{
+	position:absolute;
+	border-right: 25px solid #A7C6DB;
+	border-bottom:10px solid transparent;
+	border-top:10px solid transparent;
+	height:25px;
+	top:-10px;
+}
+.part{
+	position:absolute;
+	border-top: 25px solid #7BA8C2;
+	border-bottom: 0px solid #7BA8C2;
+	border-left: 0px solid #7BA8C2;
+	border-right: 0px solid #7BA8C2;
+	width:25px;
+}
+.fingers{
+	position:absolute;
+	height:5px;
+	width:15px;
+	border:1px solid black;
+	background:#A7C6DB;
+}
+#rf1{
+	top:-9px;
+}
+#rf2{
+	top:5px;
+}
+#rf3{
+	top:20px;
+}
+#lf1{
+	top:-9px;
+}
+#lf2{
+	top:5px;
+}
+#lf3{
+	top:20px;
+}
+</style>
+<script>
+	function start()
+	{
+		var obj=document.getElementById("left_hande");
+		var part_array=obj.children;
+		
+		for(var i=0;i<part_array.length;i++)
+		{
+			part_array[i].style.left=-1*i*25-2*i+"px";
+		}
+		
+		for(var i=0;i<3;i++)
+		{
+			part_array[part_array.length-i-1].style.left=-1*(part_array.length-3)*25-2*(part_array.length-3)+7+"px";
+		}
+		
+		var obj=document.getElementById("right_hande");
+		var part_array=obj.children;
+		
+		for(var i=0;i<part_array.length;i++)
+		{
+			part_array[i].style.left=i*25+2*i+"px";
+		}
+		
+		for(var i=0;i<3;i++)
+		{
+			part_array[part_array.length-i-1].style.left=(part_array.length-3)*25+2*(part_array.length-3)+"px";
+		}
+		
+		obj=document.getElementById("left_leg");
+		var part_array=obj.children;
+		
+		for(var i=0;i<part_array.length;i++)
+		{
+			part_array[i].style.top=1*i*25+2*i+"px";
+		} 
+		
+		obj=document.getElementById("rigth_leg");
+		var part_array=obj.children;
+		
+		for(var i=0;i<part_array.length;i++)
+		{
+			part_array[i].style.top=1*i*25+2*i+"px";
+		}
+	}
+
+
+
+	function count_border(a, h)
+	{
+		var a1=a*3.14/180;
+		return (Math.tan(Math.abs(a1))*h);
+	}
+
+	function bending2(angle,length, place)
+	{
+		var obj=document.getElementById("right_hande");
+		var part_array=obj.children;
+
+		for(var i=0;i<part_array.length;i++)
+		{
+			part_array[i].style.left=i*100+3*i+"px";
+			part_array[i].style.top=0+"px";
+			if(angle>=0)
+			{
+				part_array[i].style.borderTopWidth="100px";
+				part_array[i].style.borderBottomWidth="0px";
+			}
+			else
+			{
+				part_array[i].style.borderBottomWidth="100px";
+				part_array[i].style.borderTopWidth="0px";
+			}
+			part_array[i].style.borderBottomStyle="solid";
+			part_array[i].style.borderRightWidth="0px";
+			part_array[i].style.borderBottomColor="red";
+		}
+
+		var new_angle=angle/length;
+		var k=1;
+		if(angle<0)
+		{
+			k=-1;
+		}
+		
+		var bor=count_border(new_angle, 100);
+		var top_offset=0;
+		var left_offset=0;
+		
+		for( var i=0;i<length;i++)
+		{
+			part_array[place+i].style.borderRightWidth=bor+"px";
+			part_array[place+i].style.borderRightStyle="solid";
+			part_array[place+i].style.borderRightColor="transparent";
+			part_array[place+i].style.width=(100-bor)+"px";
+			part_array[place+i].style.setProperty("-webkit-transform", "rotate("+new_angle*i+"deg)");
+			part_array[place+i].style.top=-50+70*Math.sin((135-new_angle*i)*3.14/180)+top_offset+"px";
+			if(i>0){
+			top_offset+=Math.sin((new_angle)*3.14/180)*100;
+		 }
+		 
+			 //part_array[place+i].style.left=parseInt(part_array[place+i].style.left,10)+(-50-k*70*Math.cos((225-new_angle*i)*3.14/180))-left_offset+"px";
+			if(i>0)
+			{
+				part_array[place+i].style.left=parseInt(part_array[place+i].style.left,10)+(-50+70*Math.cos((45*k-new_angle*i)*3.14/180))-left_offset+"px";
+			}
+			
+			left_offset+=(100-(100-bor)*Math.cos(new_angle*i*3.14/180))*Math.cos(new_angle*i*3.14/180);
+		}
+		
+		//left_offset+=100*Math.tan((new_angle)*3.14/180);
+		for(var i=(place+length);i<(part_array.length);i++)
+		{
+			part_array[i].style.setProperty("-webkit-transform", "rotate("+angle+"deg)");
+			part_array[i].style.top=-50+70*Math.sin((135-angle)*3.14/180)+top_offset+"px";
+			top_offset+=Math.sin((angle)*3.14/180)*100;
+			part_array[i].style.left=parseInt(part_array[i].style.left,10)-left_offset+(-50+70*Math.cos((45*k-angle)*3.14/180))+"px";
+			left_offset+=(100-100*Math.cos((angle)*3.14/180));
+		}
+	}
+
+	function changeBorder(object,value,side)
+	{
+		if(side=="Top")
+		{
+			object.style.borderTopWidth=value;
+		}
+		
+		if(side=="Bottom")
+		{
+			object.style.borderBottomWidth=value;
+		}
+		
+		if(side=="Left")
+		{
+			object.style.borderLeftWidth=value;
+		}
+		
+		if(side=="Right")
+		{
+			object.style.borderRightWidth=value;
+		}
+	}
+
+
+	function changeBorderColor(object,value,side)
+	{
+		if(side=="Top")
+		{
+			object.style.borderTopColor=value;
+		}
+		if(side=="Bottom")
+		{
+			object.style.borderBottomColor=value;
+		}
+		if(side=="Left")
+		{
+			object.style.borderLeftColor=value;
+		}
+		if(side=="Right")
+		{
+			object.style.borderRightColor=value;
+		}
+	}
+
+
+
+	function Telescopic_part(part, side,name,size,distance){
+		this.name=name;
+		this.size=size;
+		this.distance=distance;
+		this.radius=Math.floor(Math.sqrt(this.size*this.size*2)/2);
+		if(part=="hand")
+		{
+			if(side=="rigth")
+			{
+				this.changeSite="Right";
+				this.UpSite="Top";
+				this.DownSite="Bottom";
+				this.angle1=45;
+				this.angle2=135;
+			}
+			else
+			{
+				this.changeSite="Left";
+				this.UpSite="Top";
+				this.DownSite="Bottom";
+				this.angle1=135;
+				this.angle2=45;
+			}
+			
+			this.distanceSide="left";
+			this.distanceNon="top";
+			this.changepar="width";
+		}
+		else
+		{
+			this.distanceSide="top";
+			this.distanceNon="left";
+			this.changepar="height";
+			
+			if(side=="rigth")
+			{
+				this.changeSite="Bottom";
+				this.UpSite="Left";
+				this.DownSite="Rigth";
+				this.angle1=45;
+				this.angle2=135;
+			}
+			else
+			{
+				this.changeSite="Bottom";
+				this.UpSite="Rigth";
+				this.DownSite="Left";
+				this.angle1=45;
+				this.angle2=135;
+			}
+		}
+		
+		this.move=function(angle,length, place)
+		{
+			var obj=document.getElementById(this.name);
+			part_array=obj.children;
+
+			for(var i=0;i<part_array.length-4;i++)
+			{
+				part_array[i].style.setProperty(this.distanceSide,i*this.size+this.distance*i+"px");
+				part_array[i].style.setProperty(this.distanceNon,"0px");
+				
+				if(angle>=0)
+				{
+					changeBorder(part_array[i],(this.size+"px"),this.UpSite);
+					changeBorder(part_array[i],("0px"),this.DownSite);
+				}
+				else
+				{
+					changeBorder(part_array[i],(this.size+"px"),this.UpSite);
+					changeBorder(part_array[i],("0px"),this.DownSite);
+				}
+				changeBorder(part_array[i],("0px"),this.changeSite);
+			}
+
+			var new_angle=angle/length;
+			var k=1;
+			
+			if(angle<0)
+			{
+				k=-1;
+			}
+			
+			var bor=count_border(new_angle, this.size);
+			var top_offset=0;
+			var left_offset=0;
+			
+			for( var i=0;i<length;i++)
+			{
+				changeBorder(part_array[place+i],(bor+"px"),this.changeSite);
+				changeBorderColor(part_array[place+i],"transparent",this.changeSite);
+				part_array[place+i].style.setProperty(this.changepar,(this.size-bor)+"px");
+				part_array[place+i].style.setProperty("-webkit-transform", "rotate("+new_angle*i+"deg)");
+				part_array[place+i].style.setProperty(this.distanceNon,-this.size/2+this.radius*Math.sin((this.angle2-new_angle*i)*3.14/180)+top_offset+"px");
+
+				if(i>0)
+				{
+					top_offset+=Math.sin((new_angle)*3.14/180)*this.size;
+				}
+				//part_array[place+i].style.left=parseInt(part_array[place+i].style.left,10)+(-50-k*70*Math.cos((225-new_angle*i)*3.14/180))-left_offset+"px";
+				if(i>0)
+				{
+					part_array[place+i].style.setProperty(this.distanceSide,parseInt(part_array[place+i].style.left,10)+(-this.size/2+this.radius*Math.cos((this.angle1*k-new_angle*i)*3.14/180))-left_offset+"px");
+				}
+
+				left_offset+=(this.size-(this.size-bor)*Math.cos(new_angle*i*3.14/180))*Math.cos(new_angle*i*3.14/180);
+			}
+				//left_offset+=100*Math.tan((new_angle)*3.14/180);
+			  for(var i=(place+length);i<(part_array.length);i++)
+			  {
+				part_array[i].style.setProperty("-webkit-transform", "rotate("+angle+"deg)");
+				part_array[i].style.setProperty(this.distanceNon,parseInt(part_array[i].style.top,10)-this.size/2+this.radius*Math.sin((this.angle2-angle)*3.14/180)+top_offset+"px");
+				top_offset+=Math.sin((angle)*3.14/180)*this.size;
+				part_array[i].style.setProperty(this.distanceSite,parseInt(part_array[i].style.left,10)-left_offset+(-this.size/2+this.radius*Math.cos((this.angle1*k-angle)*3.14/180))+"px");
+				left_offset+=(this.size-this.size*Math.cos((angle)*3.14/180));
+			  }
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	function test_exeption(array_objects)
+	{
+		for(var i=7;i<=9;i++)
+		{
+			array_objects[i].style.left=7*25+2*7+"px";
+		}
+		
+		array_objects[7].style.top="-9px";
+		array_objects[8].style.top="5px";
+		array_objects[9].style.top="20px";
+		array_objects[6].style.top="-10px";
+	}
+	
+	function test_exeption1(array_objects)
+	{
+		for(var i=7;i<=9;i++)
+		{
+			array_objects[i].style.left=-7*25-2*7+"px";
+		}
+		array_objects[7].style.top="-9px";
+		array_objects[8].style.top="5px";
+		array_objects[9].style.top="20px";
+		array_objects[6].style.top="-10px";
+	}
+	
+	function exeption_rotate(array_objects,angle)
+	{
+		array_objects[8].style.top=parseInt(array_objects[7].style.top,10)+16+"px";
+		array_objects[9].style.top=parseInt(array_objects[8].style.top,10)+15+"px";
+		array_objects[9].style.left=parseInt(array_objects[7].style.left,10)-Math.sin(angle*3.14/180)*15+"px";
+		array_objects[8].style.left=parseInt(array_objects[7].style.left,10);
+		array_objects[7].style.left=parseInt(array_objects[7].style.left,10)-Math.sin(-1*angle*3.14/180)*16+"px";
+	}
+	
+	function exeption_rotate1(array_objects,angle)
+	{
+		array_objects[8].style.top=parseInt(array_objects[7].style.top,10)+16+"px";
+		array_objects[9].style.top=parseInt(array_objects[8].style.top,10)+15+"px";
+		array_objects[9].style.left=parseInt(array_objects[7].style.left,10)+Math.sin(angle*3.14/180)*15+"px";
+		array_objects[8].style.left=parseInt(array_objects[7].style.left,10);
+		array_objects[7].style.left=parseInt(array_objects[7].style.left,10)+Math.sin(-1*angle*3.14/180)*17+"px";
+	}
+
+
+
+	function testMov(side, size,distance,part,name,exeption,exeption1)
+	{
+		this.size=size;
+		this.name=name;
+		this.radius=Math.sqrt(size*size*2)/2;
+		this.distance=distance;
+		this.exeption=exeption;
+		this.exeption1=exeption1;
+		
+		if(part=="hand")
+		{
+			this.offset="left";
+			this.non_offset="top";
+			this.borderUp="Top";
+			this.borderDown="Bottom";
+			this.change_paramentr="width";
+			if(side=="right")
+			{
+				this.angle1=45;
+				this.angle2=135;
+				this.change="Right";
+				this.c=1;
+				this.start=0;
+				this.end=9;
+			}
+			else
+			{
+				this.change="Left";
+				this.angle1=45;
+				this.angle2=135;
+				this.c=-1;
+				this.start=6;
+				this.end=0;
+			}
+		}
+		else
+		{
+			this.offset="top";
+			this.non_offset="left";
+			this.borderUp="Left";
+			this.borderDown="Right";
+			this.change_paramentr="height";
+			
+			if(side=="right")
+			{
+				this.angle1=45;
+				this.angle2=135;
+				this.change="Bottom";
+				this.c=-1;
+				this.start=0;
+				this.end=9;
+			}
+			else
+			{
+				this.change="Left";
+				this.angle1=45;
+				this.angle2=135;
+				this.c=1;
+				this.start=0
+				this.end=5;
+			}
+		}
+		
+		this.move=function(angle,length, place){
+		var obj=document.getElementById(this.name);
+		var part_array=obj.children;
+
+		for(var i=0;i<part_array.length;i++)
+		{
+			if(i<part_array.length)
+			{
+				part_array[i].style.setProperty(this.offset,i*this.size*this.c+i*this.distance*this.c+"px");
+				part_array[i].style.setProperty(this.non_offset,"0px");
+			}
+			
+			if(i<part_array.length-4)
+			{
+				if(angle>=0)
+				{
+					changeBorder(part_array[i],this.size,this.borderUp);
+					//changeBorderColor(part_array[i],"red",this.borderUp);
+					changeBorder(part_array[i],"0px",this.borderDown);
+				 }
+				else
+				{
+					changeBorder(part_array[i],this.size,this.borderDown);
+					changeBorder(part_array[i],"0px",this.borderUp);
+					//changeBorderColor(part_array[i],"red",this.borderDown);
+				}
+				
+				changeBorder(part_array[i],"0px",this.change);
+			}
+		}
+		
+		this.exeption(part_array);
+		var new_angle=angle/length;
+		var k=1;
+		if(angle<0)
+		{
+			k=-1;
+		}
+		
+		var bor=count_border(new_angle, this.size);
+		var top_offset=0;
+		var left_offset=0;
+		for( var i=0;i<length;i++)
+		{
+			changeBorder(part_array[(place+i)],(bor+"px"),this.change);
+			changeBorderColor(part_array[(place+i)],"transparent",this.change);
+			part_array[(place+i)].style.setProperty(this.change_paramentr,(this.size-bor)+"px");
+			part_array[(place+i)].style.setProperty("-webkit-transform", "rotate("+new_angle*i*this.c+"deg)");
+			part_array[(place+i)].style.setProperty(this.non_offset,-this.size/2+this.radius*Math.sin((this.angle2-new_angle*i)*3.14/180)+top_offset+"px");
+			if(i>0)
+			{
+				top_offset+=Math.sin((new_angle*i)*3.14/180)*this.radius;
+			}
+			//part_array[place+i].style.left=parseInt(part_array[place+i].style.left,10)+(-50-k*70*Math.cos((225-new_angle*i)*3.14/180))-left_offset+"px";
+			if(i>0)
+			{
+				part_array[(place+i)].style.setProperty(this.offset,parseInt(part_array[(place+i)].style.getPropertyValue(this.offset),10)+(-this.size/2+this.radius*Math.cos((this.angle1*k-new_angle*i)*3.14/180))*this.c-left_offset*this.c+"px");
+			}
+			
+			left_offset+=(this.size-(this.size-bor)*Math.cos(new_angle*i*3.14/180))*Math.cos(new_angle*i*3.14/180);
+		}
+			//left_offset+=100*Math.tan((new_angle)*3.14/180);
+		var j=0;
+		for(var i=(place+length);i<(part_array.length);i++)
+		{
+			alert(i);
+			part_array[i].style.setProperty("-webkit-transform", "rotate("+angle*this.c+"deg)");
+			part_array[i].style.setProperty(this.non_offset,parseInt(part_array[i].style.getPropertyValue(this.non_offset),10)-this.size/2+this.radius*Math.sin((this.angle2-angle)*3.14/180)+top_offset+"px");
+			top_offset+=Math.sin((angle)*3.14/180)*this.size;
+			part_array[i].style.setProperty(this.offset,parseInt(part_array[i].style.getPropertyValue(this.offset),10)-(this.size-this.size*Math.cos((angle)*3.14/180))*j*this.c+(-this.size/2+this.radius*Math.cos((this.angle1*k-angle)*3.14/180))*this.c+this.c-left_offset*this.c+"px");
+			//left_offset+=(this.size-this.size*Math.cos((angle)*3.14/180));
+			j++;
+		}
+		
+		  this.exeption1(part_array,angle);
+		}
+	}
+
+
+</script>
+<body onload="start()">
+<div id="m1">
+<div class="head">
+<div class="eyes">
+</div>
+<div class="eyesi">
+<div class="eye" id="eye1">
+<div class="pupils">
+</div>
+</div>
+<div class="eye" id="eye2">
+<div class="pupils">
+</div>
+</div>
+</div>
+<div class="mouth">
+<div id="tooth1">
+</div>
+<div id="tooth2">
+</div>
+<div id="tooth3">
+</div>
+<div id="tooth4">
+</div>
+</div>
+<div class="antenap1">
+</div>
+<div class="antenap2">
+</div>
+<div class="antenap3">
+</div>
+</div>
+<div class="neck">
+</div>
+<div class="bbody">
+<div class="cover">
+<div class="grip">
+</div>
+</div>
+<div class="forearm" id="forearm1">
+</div>
+<div class="forearm" id="forearm2">
+</div>
+<div id="left_hande">
+<div class="part" id="part1l">
+</div>
+<div class="part" id="part2l">
+</div>
+<div class="part" id="part3l">
+</div>
+<div class="part" id="part4l">
+</div>
+<div class="part" id="part5l">
+</div>
+<div class="part" id="part6l">
+</div>
+<div id="left_wrist">
+</div>
+<div class="fingers" id="lf1">
+</div>
+<div class="fingers" id="lf2">
+</div>
+<div class="fingers" id="lf3">
+</div>
+</div>
+<div id="right_hande">
+<div class="part" id="part1r">
+</div>
+<div class="part" id="part2r">
+</div>
+<div class="part" id="part3r">
+</div>
+<div class="part" id="part4r">
+</div>
+<div class="part" id="part5r">
+</div>
+<div class="part" id="part6r">
+</div>
+<div id="right_wrist">
+</div>
+<div class="fingers" id="rf1">
+</div>
+<div class="fingers" id="rf2">
+</div>
+<div class="fingers" id="rf3">
+</div>
+</div>
+<div id="left_leg">
+<div class="part" id="part1ll">
+</div>
+<div class="part" id="part2ll">
+</div>
+<div class="part" id="part3ll">
+</div>
+<div class="part" id="part4ll">
+</div>
+<div class="part" id="part5ll">
+</div>
+<div class="part" id="part6ll">
+</div>
+<div id="left_foot">
+</div>
+</div>
+<div id="rigth_leg">
+<div class="part" id="part1lr">
+</div>
+<div class="part" id="part2lr">
+</div>
+<div class="part" id="part3lr">
+</div>
+<div class="part" id="part4lr">
+</div>
+<div class="part" id="part5lr">
+</div>
+<div class="part" id="part6lr">
+</div>
+<div id="right_foot">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
